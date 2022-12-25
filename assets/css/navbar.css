@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+}
+nav {
+  background-color: #faf8f8;
+  display: flex;
+  height: 8vh;
+}
+
+/* Nav Kiri */
+.nav-kiri {
+  display: flex;
+  flex: 50%;
+  padding-left: 100px;
+  align-items: center;
+}
+nav .nav-kiri li {
+  display: inline;
+}
+nav .nav-kiri a {
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  font-weight: bold;
+}
+nav .nav-kiri a:hover {
+  color: grey;
+  font-size: 16px;
+}
+/* Nav Kiri */
+
+/* Nav Kanan */
+.nav-kanan {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+nav .nav-kanan a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+/* Nav Kanan */

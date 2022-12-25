@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+  </head>
+
+  <body>
+    <!-- Navbar Pembuka -->
+    <nav>
+      <div class="nav-kiri">
+        <a href="https://www.dumbways.id"><img src="assets/images/dbw.png" alt="Logo" /></a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="my-project.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-kanan">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!-- Navbar Penutup -->
+
+    <!-- Form Pembuka -->
+    <form class="form" onsubmit="addBlog(event)">
+      <h2 class="text-center">Add My Project</h2>
+
+      <!-- Project Pembuka -->
+      <div>
+        <label class="label" for="input-project">Project Name</label>
+        <input class="input" type="text" id="input-project" />
+      </div>
+      <!-- Project Penutup -->
+
+      <!-- Date Pembuka -->
+      <div class="box-date" style="margin-top: 15px">
+        <div class="box-date1">
+          <label class="label" for="input-startdate">Start Date</label>
+          <input class="input" type="date" id="input-startdate" />
+        </div>
+        <div class="box-date2">
+          <label class="label" for="input-enddate">End Date</label>
+          <input class="input" type="date" id="input-enddate" />
+        </div>
+      </div>
+      <!-- Date Penutup -->
+
+      <!-- Description Pembuka -->
+      <div style="margin-top: 15px">
+        <label for="input-description" class="label">Description</label>
+        <textarea id="input-description" class="input-email"></textarea>
+      </div>
+      <!-- Description Penutup -->
+
+      <!-- Checkbox Pembuka -->
+      <div style="margin-top: 15px">
+        <label class="label">Technologies</label>
+        <div class="box-check" style="margin-top: 10px">
+          <div class="box-check1">
+            <input
+              type="checkbox"
+              id="nodejs"
+              value="fa-brands fa-node-js icon-size"
+            />
+            <span class="checkboxtext"> Node Js </span>
+          </div>
+          <div class="box-check2">
+            <input
+              type="checkbox"
+              id="reactjs"
+              value="fa-brands fa-react icon-size"
+            />
+            <span class="checkboxtext"> React Js</span>
+          </div>
+        </div>
+        <div class="box-check" style="margin-top: 20px">
+          <div class="box-check1">
+            <input
+              type="checkbox"
+              id="vuejs"
+              value="fa-brands fa-vuejs icon-size"
+            />
+            <span class="checkboxtext"> Vue Js </span>
+          </div>
+          <div class="box-check2">
+            <input
+              type="checkbox"
+              id="python"
+              value="fa-brands fa-python icon-size"
+            />
+            <span class="checkboxtext"> Python </span>
+          </div>
+        </div>
+      </div>
+      <!-- Checkbox Penutup -->
+
+      <!-- Image Pembuka -->
+      <div style="margin-top: 15px">
+        <label class="label">Upload Image</label>
+        <div class="input-blog-image-group">
+          <label for="input-image">
+            <p>Attach File</p>
+            <img src="assets/images/file.png" alt="file" />
+          </label>
+          <input type="file" id="input-image" hidden />
+        </div>
+      </div>
+      <!-- Image Penutup -->
+
+      <div class="box">
+        <button class="button">Submit</button>
+      </div>
+    </form>
+    <!-- Form Penutup-->
+
+    <!-- Card Pembuka -->
+    <div class="blog">
+      <h1 class="text-project">My Project</h1>
+      <div id="blogs" class="box-blog">
+      
+      </div>
+    </div>
+    <!-- Card Penutup-->
+
+    <script src="assets/js/project.js"></script>
+  </body>
+</html>
